@@ -1,64 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Real Estate Co.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoyalHomes - Your Trusted Real Estate Partner</title>
+  <meta name="description" content="Explore RoyalHomes real estate listings across the UAE. Villas, apartments, investment properties.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f2f2f2;
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
       color: #333;
     }
+
     header {
-      background: #007bff;
+      background: linear-gradient(to right, #1c1c1c, #2f2f2f);
       color: white;
-      padding: 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-    section {
-      padding: 30px;
-      text-align: center;
+
+    nav {
+      background: #fff;
+      padding: 15px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .whatsapp-btn {
-      background-color: #25d366;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
+
+    nav a {
+      margin: 0 15px;
+      color: #333;
       text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
+      font-weight: bold;
     }
-    footer {
-      background: #ddd;
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
       text-align: center;
-      padding: 10px;
-      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .properties {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .property {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    .property img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .property-details {
+      padding: 15px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
+
 <body>
 
+  <nav>
+    <a href="#properties">Listings</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <header>
-    <h1>Welcome to Real Estate Co.</h1>
-    <p>Your trusted partner in property investments</p>
+    <h1>RoyalHomes</h1>
+    <p>Your Trusted Real Estate Partner in the UAE</p>
   </header>
 
-  <section>
-    <h2>Find Your Dream Home</h2>
-    <p>Explore affordable apartments, luxury villas, and beachfront properties in top locations across the UAE.</p>
-    <a class="whatsapp-btn" href="https://wa.me/971501234567?text=Hi!%20I'm%20interested%20in%20your%20property%20listings" target="_blank">
-      Chat with us on WhatsApp
-    </a>
+  <section id="properties">
+    <h2>Featured Properties</h2>
+    <div class="properties">
+      <div class="property">
+        <img src="https://via.placeholder.com/400x200?text=Villa+in+Dubai" alt="Villa">
+        <div class="property-details">
+          <h3>Luxury Villa in Dubai</h3>
+          <p>5BR · AED 4,200,000 · Private Pool · Golf View</p>
+        </div>
+      </div>
+      <div class="property">
+        <img src="https://via.placeholder.com/400x200?text=Apartment+in+RAK" alt="Apartment">
+        <div class="property-details">
+          <h3>Seafront Apartment in RAK</h3>
+          <p>2BR · AED 1,200,000 · Lagoon View · Gated Community</p>
+        </div>
+      </div>
+      <div class="property">
+        <img src="https://via.placeholder.com/400x200?text=Studio+in+Sharjah" alt="Studio">
+        <div class="property-details">
+          <h3>Affordable Studio in Sharjah</h3>
+          <p>Studio · AED 420,000 · High ROI · Ready to Move</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About RoyalHomes</h2>
+    <p style="max-width: 700px; margin: auto; text-align: center;">
+      We specialize in connecting people with premium and affordable properties across Dubai, Ras Al Khaimah, Sharjah, and Abu Dhabi. Whether you’re a first-time buyer, investor, or tenant – our agents are here to help you make the best choice.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align: center;">📞 +971 50 123 4567 | ✉️ info@royalhomes.ae</p>
   </section>
 
   <footer>
-    &copy; 2025 Real Estate Co. | All rights reserved
+    &copy; 2025 RoyalHomes. All Rights Reserved.
   </footer>
+
+  <a class="whatsapp" href="https://wa.me/971501234567" target="_blank">💬 Chat on WhatsApp</a>
+
+  <!-- Elfsight AI Chatbot | RoyalHomes -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-f7f77ce8-84d9-4822-b0cd-1fa8c9b6672c" data-elfsight-app-lazy></div>
 
 </body>
 </html>
